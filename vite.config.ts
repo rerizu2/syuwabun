@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
     plugins: [react()],
     define: {
       // Polyfill process.env.API_KEY for the client
-      'process.env.API_KEY': JSON.stringify(env.API_KEY),
+      'process.env.API_KEY': JSON.stringify(env.AIzaSyCInyB7dakaCX_v5z002fQcpAaSABph2rw),
     },
     server: {
       host: true, // Listen on all addresses
