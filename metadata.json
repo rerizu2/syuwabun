@@ -1,0 +1,5 @@
+{
+  "name": "WordExpander AI",
+  "description": "単語や箇条書きを入力するだけで、文脈を理解し、しっかりとした文章に自動変換するAIツールです。",
+  "requestFramePermissions": []
+}
