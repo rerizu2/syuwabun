@@ -7,6 +7,8 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   return {
     plugins: [react()],
+    // Base path is required for GitHub Pages or relative hosting
+    base: './',
     define: {
       // Polyfill process.env.API_KEY for the client
       'process.env.API_KEY': JSON.stringify(env.AIzaSyCInyB7dakaCX_v5z002fQcpAaSABph2rw),
