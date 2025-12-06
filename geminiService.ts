@@ -1,4 +1,4 @@
-import { GoogleGenAI, GenerateContentStreamResult } from "@google/genai";
+import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
 import { Tone, Length } from "../types";
 
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
@@ -7,7 +7,7 @@ export const generateExpandedTextStream = async (
   input: string,
   tone: Tone,
   length: Length
-): Promise<GenerateContentStreamResult> => {
+): Promise<AsyncIterable<GenerateContentResponse>> => {
   
   const systemInstruction = `
 あなたはプロフェッショナルなライティングアシスタントです。
